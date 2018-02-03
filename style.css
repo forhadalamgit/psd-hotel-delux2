@@ -1,0 +1,531 @@
+/*=====  End of Header area  ======*/
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html,body{
+	height: 100%;
+	font-family: quicksand-regular;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+	/*! margin: 0 0 15px 0; */
+}
+
+
+p{
+	margin:0 0 10px 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+.default-button {
+	padding: 10px 20px;
+	background: #ffd700;
+	border: none;
+	font-size: 14pt;
+	color:gray;
+	cursor: pointer;
+	border-radius: 7%;
+}
+	
+
+.default-button:hover {
+	color:#333333;
+	font-size: 14pt;
+}
+
+/*==================================
+=            Font Faces            =
+==================================*/
+
+@font-face {
+	font-family: quicksand-regular;
+	src: url('fonts/quicksand-regular.otf') ;
+}
+
+@font-face {
+	font-family: ardecode;
+	src: url('fonts/ARDECODE.ttf') ;
+}
+
+
+/*=====  End of Font Faces  ======*/
+
+
+
+/*===================================
+=            Header area            =
+===================================*/
+
+
+
+div.container {
+	width: 1500px;
+	margin:0 auto;
+} 
+section.header {
+	min-height: 100px;
+	background:#2a2e33;
+	
+} 
+
+div.header-left {
+	width: 360px;
+	position: relative;
+	left:10%;
+	top:50%;
+	padding:25px 0 0 0;
+	float: left;
+} 
+
+div.header-left >span{
+	color:#fff;
+	font-size:13px;
+	padding: 10px 0 0 2px;
+	position: absolute;
+} 
+
+div.logo-area {} 
+div.logo-area h2{ 
+	color:#fff; 
+	text-transform: uppercase; 
+	font-size: 30px;
+	float: left;
+
+} 
+div.logo-area h2>span{
+	color:#ffd700;
+} 
+
+div.heder-right {
+	float: right;
+	position: relative;
+	right: 5%;
+} 
+nav.header-nav-menu{} 
+nav.header-nav-menu ul{ } 
+nav.header-nav-menu ul li{ 
+	float: left; 
+	padding: 38px 20px; 
+	cursor: pointer; 
+	height: 100px; 
+
+} 
+
+@keyframes menu-hover{
+	0% {left:100px;opacity: 0;}
+	100%{left:0;opacity: 1}
+
+}
+nav.header-nav-menu ul li:hover { 
+	background: #1e2329;
+	position: relative;
+}
+
+nav.header-nav-menu ul li:hover:Before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left:0;
+	top:0;
+	animation-name: menu-hover;
+	animation-duration: .5s;
+	border-top: 3px solid #ffd700;
+} 
+
+nav.header-nav-menu ul li a{
+	display: block;
+	 color:#fff;
+	 font-weight: 800;
+} 
+
+/*=====  End of Header area  ======*/
+
+
+/*===================================
+=            Header area            =
+===================================*/
+
+section.slider-area {
+	height: 460px;
+	display: table;
+	width:100%;
+	background: #00ccff;
+	text-align: center;
+
+} 
+div.slider-text{
+	display: table-cell;
+	padding: 80px 0 0 0;
+}
+
+div.slider-text h4{
+	color:#b4becb;
+	font-size:14pt;
+} 
+div.slider-text h4>span{
+	color:#fff;
+} 
+div.slider-text h2{ 
+	position: relative;
+	color: #fff; 
+	padding: 50px;
+	font-weight: 800;
+	font-size: 3em;
+} 
+
+
+div.slider-text h2:After{
+	content: "";
+	position: absolute;
+	width: 17%;
+	border-bottom: 2px dotted #B4C2E7;
+	left: 41.2%;
+	bottom: 9%;
+}
+
+
+div.slider-text h3{
+	color:#b4becb;
+	font-size:16pt;
+} 
+
+
+/*=====  End of Header area  ======*/
+
+
+
+/*===================================
+=            Header area            =
+===================================*/
+
+div.container.bookings-area{
+	background: url(img/packege-bg.png);
+	/*min-height:500px;*/
+}
+
+div.view-price {
+	min-height: 86px; 
+	background:#2a2e33; 
+	width: 70%; 
+	margin: 0 auto;
+	position: relative;
+	top: -25px;
+} 
+div.pricing-container {
+	 
+} 
+
+div.input-grp {
+	display: inline-block; 
+	width: 28%;
+	padding: 0 0 0 5px;
+	position: relative;
+} 
+
+
+
+div.input-grp >span{
+	display: block; 
+	color:#b4becb;
+	font-size: 13pt;
+	letter-spacing: 1px; 
+	margin-bottom: 5px;
+	text-align: left;
+	padding: 5px 0 0 0;
+} 
+
+
+
+input.input-text {
+	border:none;
+ 	background: url('img/calendar-ico.png') no-repeat white 1%;
+} 
+
+ input.input-text, .room-select{ 
+ 	width: 100%;
+ 	border-radius: 5%;
+ 	color: gray;
+ 	letter-spacing: 1px;
+ 	font-size: 15px;
+ 	padding: 3% 7%;
+
+ }
+
+.room-select {  
+	border: none; 
+	letter-spacing: 1px; 
+	font-size: 12pt;
+} 
+
+div.pirce-submit {
+	display: inline-block;
+	width: 14%;
+	margin: 0 auto;
+} 
+
+input.view-price-button {
+		
+} 
+input.view-price-button{ 
+	border-radius: 5px; 
+	border: none;
+	width: 100%;
+}
+.view-price-button {} 
+
+/*=====  End of Header area  ======*/
+
+
+
+
+/*===================================
+=            Header area            =
+===================================*/
+
+
+
+/*=====  End of Header area  ======*/
+
+.bookings-area{
+	background: url(img/packege-bg.png);
+}
+
+div.promo-area {
+	width: 80%; margin:0 auto; 
+	position: relative;
+	
+} 
+div.promo-text { margin: 20px 0 0 0; } 
+div.promo-text h1 {
+	font-family: ardecode;
+	font-weight: 300;
+	font-size: 4em;
+
+}
+div.promo-text h1,
+div.promo-text p {
+	text-align: center; 
+	color: #2a2e33;
+} 
+div.promo-text p{   } 
+div.promo-img { 
+	height: 290px; 
+	width: 55%;
+	margin: 5% auto 0 auto;} 
+div.promo-img img{ 
+	height: 200px;
+	width: 200px;
+	border:1px solid gray; 
+	border-radius: 100%; 
+	margin: 0 0 0 15px; 
+} 
+div.img-arro img {
+	height: 20%;
+	width: 30%;
+	border: none;
+} 
+div.arro-left {
+	position: absolute; 
+	top: 57%;
+	left: 10%;
+	cursor: pointer;
+} 
+div.arro-right {
+	position: absolute;
+	top: 57%;right: 10%;
+	cursor: pointer;
+} 
+
+/*===================================
+=            Header area            =
+===================================*/
+
+div.package-warp{
+	background: url(img/room-bd.png);
+	
+}
+
+div.packages-area {
+	width: 85%;
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	padding: 0 auto;
+} 
+div.packages-area h3{
+	text-align: center;
+	font-family: ardecode;
+	font-weight: 300;
+	font-size: 4em;
+	line-height: 2em;
+	color: #2a2e33;
+	padding: 0 0 0% 0;
+} 
+div.packages-detals {
+	float: left;
+	width: 31%;
+	margin: 0 2% 0 auto;
+	padding: 0 0 3% 0;
+} 
+
+div.packages-detals img {
+	margin: 
+}
+
+div.packages-detals  img,h4,p, div.icon{ 
+	text-align: center;
+	width: 100%;
+} 
+
+div.icon {
+	margin: 0 0 6% 0;
+	color: #5e5c5c;
+	font-size: 1.4em;} 
+
+/*=====  End of Header area  ======*/
+
+
+
+
+/*===================================
+=            Header area            =
+===================================*/
+
+div.testimonials {
+ position: relative; 
+ width: 100%; 
+ height: 200px; 
+ padding: 40px 0;
+ background: #e7cb2c;
+} 
+div.test-text{
+	width: 53%;
+	margin: 0 0 0 7%;
+}
+div.testimonials h2{
+	color: #fff;
+	font-size: 2.44em;
+	font-weight: bold;
+	letter-spacing: 1pt;
+	margin: 2% 0 3% 1%;
+} 
+div.testimonials p{
+	text-align: left; 
+	padding: 0 0 0 3%; 
+	color: #fff;
+} 
+div.testmoni-speakerd {
+	position: absolute; 
+	bottom:-5px;
+	right:  8%;} 
+div.testmoni-speakerd {} 
+
+
+/*=====  End of Header area  ======*/
+
+
+
+/*===================================
+=            Header area            =
+===================================*/
+div.container.footer-wrapper{
+	min-height: 355px;
+	background: #333333;
+	border-bottom: 20px solid #1f1f1f;
+}
+footer.footer-area {
+	width: 86%;
+    margin: 0 auto;
+    padding: 2% 0 0 0;
+    overflow: hidden
+} 
+div.col-1 { 
+	width: 20%; 
+} 
+h4.footer-head {} 
+div.col-2 { 
+	width: 20%;
+    padding: 0 0 0 1%;
+} 
+h4.footer-head {} 
+div.col-3 {
+	width: 40%;
+	padding: 0 0 0 2%;
+} 
+h4.footer-head {} 
+input.default-button {} 
+.readmore {} 
+div.col-4 {
+	width: 20%;
+	padding: 0 0 0 1%;
+} 
+h4.footer-head {} 
+div.footer-loing {} 
+input.footer-login {
+    width: 80%;
+    border-radius: 4%;
+    border: none;
+    margin: 2% 0 4% 0;
+    padding: 3% 4%;
+    color: #665e5e;
+    font-weight: bold;
+    font-size: 9pt;
+    letter-spacing: 0.03em;
+}
+
+input.default-button {
+    margin: 4% 0 0 0;
+}
+.login-button {} 
+.footer-col{
+	float: left;
+}
+.footer-col h4{
+	letter-spacing: 1px;
+    color: #feffff;
+    text-transform: uppercase;
+    margin: 3% 0 30px 0;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.footer-col p{
+	text-align: left;
+    margin: 0 0 5% 0;
+    line-height: 1.4em;
+    color: #aeacac;
+    letter-spacing: .009em;
+}
+	
+
+.footer-col p span{
+	display: block;
+	color:#ffca7a80;
+}
+
+.footer-loing span {
+    color: #a7a7a7;
+    letter-spacing: 0.05em;
+    margin: 3% 0 0 0;
+    display: block;
+}
+
+/*=====  End of Header area  ======*/
+
